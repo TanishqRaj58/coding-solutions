@@ -1,4 +1,4 @@
-# Java If-Else
+# Java Stdin and Stdout II
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -37,42 +37,24 @@ To make the problem easier, a portion of the code is already provided in the edi
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T12:00:03.443Z  
+**Submitted:** 2026-10-19T16:37:48.506Z  
 
 ```java
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
-
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-
-        bufferedReader.close();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double d = sc.nextDouble();
+        sc.nextLine();
+        String s = sc.nextLine();
         
-        // Scanner sc = new Scanner(System.in);
-        // int n;
-        if(n>=1 && n<=100){
-            if(n%2==0){
-                if(n>=2 && n<=5) System.out.println("Not Weird");
-                else if(n>=6 && n<=20) System.out.println("Weird");
-                else System.out.println("Not Weird");
-            }
-            else System.out.println("Weird");
-        }
-        
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + n);
         
     }
 }
