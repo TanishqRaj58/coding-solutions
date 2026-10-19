@@ -1,4 +1,4 @@
-# Welcome to Java!
+# Java Stdin and Stdout I
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -47,7 +47,7 @@ There are $3$ lines of input, and each line contains a single integer.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T11:40:42.343Z  
+**Submitted:** 2026-10-19T11:45:42.770Z  
 
 ```java
 import java.io.*;
@@ -56,8 +56,15 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World.");
-        System.out.println("Hello, Java.");
+        Scanner sc = new Scanner(System.in);
+        int number1 = sc.nextInt();
+        System.out.println(number1);
+        
+        int number2 = sc.nextInt();
+        System.out.println(number2);
+        
+        int number3 = sc.nextInt();
+        System.out.println(number3);
     }
 }
 
